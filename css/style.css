@@ -11,19 +11,51 @@ a{
     text-decoration: none;
 }
 ul{
-    margin: 0;
-    padding: 0;
+margin-top: 0;
+    margin-bottom: 0;
+        padding-left: 0;
     list-style: none;
 }
 h1, h2, h3, h4, p{
-    margin: 0;
+ margin-top: 0;
+ margin-bottom: 0;
 }
 img{
     display: block;
     max-width: 100%;
     height: auto;
 }
+.container{
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 /* ================= navigation =================*/
+.header-flex {
+    display: flex;
+    align-items: center;
+    height: 72px;
+}
+.nav-flex{
+    display: flex;
+    align-items: center;
+}
+
+.page-header{
+ 
+    background: #FFFFFF;
+    border-bottom: 1px solid #E7E9FC;
+}
+.menu-list{
+    display: flex;
+    margin-left: 76px;
+   
+}
+.menu-item:not(:last-child){
+    margin-right: 40px;
+}
 .logo{
 
         font-family: 'Raleway', sans-serif;
@@ -58,6 +90,17 @@ img{
 .link:hover, .link:focus{
     color: var(--accent-color)
 }
+      /* Adress */
+      .contact{
+margin-left: auto;
+      }
+.contact-list{
+display: flex;
+
+}
+.contact-item + .contact-item{
+   margin-left: 40px;
+}
 .contact-mail{
 
         font-style: normal;
@@ -86,10 +129,10 @@ color: #434455;}
 
 /* ==================== hero ==================== */
 .hero{
-        background: #2E2F42;
+  background-color: #2E2F42;
+  margin: 0;
 }
 .hero-title{
- 
         font-style: normal;
         font-weight: 700;
         font-size: 56px;
@@ -97,9 +140,12 @@ color: #434455;}
         text-align: center;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+        padding-top: 188px;
+        margin-bottom: 48px;
 }
 .hero-button{
-
+    display: inline-block;
+    padding: 16px 32px;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -110,13 +156,22 @@ color: #434455;}
         color: #FFFFFF;
         background-color: #4D5AE5;
         cursor: pointer;
+      
+        
 }
 .hero-button:hover, .hero-button:focus{
     background-color: var(--accent-color);
     color: #FFFFFF; 
 }
 /* ================= features =================*/
-
+.features-container{
+    display: flex;
+}
+.features-title{
+    display: none;
+}
+.features-item:not(:last-child){
+    margin-right: 24px;}
 .features-item .title{
 
     font-style: normal;
@@ -125,6 +180,8 @@ color: #434455;}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding-top: 120px;
+    margin-bottom: 8px;
 }
 .features-item .text{
  
@@ -132,9 +189,13 @@ color: #434455;}
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        margin-bottom: 120px;
 }
 
 /* work */
+.work{
+    
+}
 .work-title{
 
         font-style: normal;
@@ -145,11 +206,18 @@ color: #434455;}
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2E2F42;
+        margin-bottom: 72px;
 }
 .work-list{
+    display: flex;
     list-style: none;
+    margin-bottom: 120px;
+    gap: 24px;
 }
 /* team */
+.team{
+  background-color: #F4F4FD;;
+}
 .team-title{
 
         font-style: normal;
@@ -160,10 +228,13 @@ color: #434455;}
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2E2F42;
+       padding-top: 120px;
+       margin-bottom: 72px;
 }
 
 .name{
-
+padding-top: 32px;
+ margin-bottom: 8px;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -171,6 +242,8 @@ color: #434455;}
         text-align: center;
         letter-spacing: 0.02em;
         color: #2E2F42;
+       
+       
 }
 .team-item .text{
 
@@ -179,7 +252,20 @@ color: #434455;}
         text-align: center;
         letter-spacing: 0.02em;
         color: #434455;
+        padding-bottom: 32px;
 }
+.team-list{
+    display: flex;
+    gap: 24px;
+}
+.team-item{
+    padding-bottom: 120px;
+}
+.card-content{
+    background-color:#FFFFFF;
+    
+}
+
 
 /* ======================== footer ========================*/
 .logo-foot{
@@ -194,6 +280,8 @@ color: #434455;}
         text-transform: uppercase;
         color: #F4F4FD;
         text-decoration: none;
+        padding-top: 100px;
+        padding-bottom: 16px;
 }
 .logo-foot:hover,
 .logo-foot:focus {
@@ -205,35 +293,59 @@ font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
+    max-width: 264px;
+    padding-bottom: 100px;
 }
 
 .foot{
     background: #2E2F42;
 }
 /* ============================= Portfolio ============================= */
+.portfolio-container{
+    margin-bottom: 120px;
+}
 .portfolio-title{
     display: none;
 }
 /* navigation */
-
+.nav-button-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    
+}
 .nav-button{
+    padding: 12px 24px;
     font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        display: flex;
-        align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
         color: #4D5AE5;
         background: #F4F4FD;
         cursor: pointer;
+        border: 1px solid #E7E9FC;
+            border-radius: 4px;
 }
 .nav-button:hover, .nav-button:focus{
     background-color: var(--accent-color)
-    }
+}
+        .nav-button:hover,
+        .nav-button:focus{
+color: #FFFFFF;
+}
+.nav-item{
+    margin-top: 96px;
+margin-bottom: 72px;
+}
+        
 /* ==================== project-card ====================*/
-
+.project-card-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
 .card-title{
     font-style: normal;
         font-weight: 500;
@@ -241,6 +353,8 @@ font-style: normal;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
+       padding: 32px 16px 0px;
+        margin-bottom: 8px;
 }
 .card-text{
 
@@ -248,7 +362,13 @@ font-style: normal;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        padding: 0px 16px 32px;
 }
+.card-content-portfolio{
+border-bottom-width: 5px;
+border-bottom-color: #434455;
+}
+   
 /* footer */
 
 /* ============================= /Portfolio ============================= */
