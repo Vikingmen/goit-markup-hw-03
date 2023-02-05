@@ -5,9 +5,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -138,11 +136,12 @@ color: #434455;}
 
 .hero{
   background-color: #2E2F42;
-
+padding-top: 188px;
+padding-bottom: 188px;
+margin-left: auto;
+margin-right: auto;
 }
-.hero-container{
-    padding: 188px 318px 292px;
-} 
+ 
 .hero-title{
         font-style: normal;
         font-weight: 700;
@@ -153,6 +152,8 @@ color: #434455;}
         color: #FFFFFF;
         width: 496px;
      margin-bottom: 48px;
+     margin-left: auto;
+     margin-right: auto;
 }
 .hero-button{
     padding: 16px 32px;
@@ -270,11 +271,12 @@ padding-top: 32px;
     gap: 24px;
 }
 .team-item{
-    padding-bottom: 120px;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 .card-content{
     background-color:#FFFFFF;
-    
+    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -291,8 +293,7 @@ padding-top: 32px;
         text-transform: uppercase;
         color: #F4F4FD;
         text-decoration: none;
-        padding-top: 100px;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
 }
 .logo-foot:hover,
 .logo-foot:focus {
@@ -304,16 +305,18 @@ font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
-    max-width: 264px;
-    padding-bottom: 100px;
 }
 
 .foot{
     background: #2E2F42;
 }
+.foot-content{
+max-width: 264px;
+padding: 100px 0;
+}
 /* ============================= Portfolio ============================= */
-.portfolio-container{
-    margin-bottom: 120px;
+.portfolio-header{
+    margin-bottom: 96px;
 }
 .portfolio-title{
     display: none;
@@ -322,10 +325,13 @@ font-style: normal;
 .nav-button-flex{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 24px;
-    
-}
+    align-items: center;}
+        .nav-item {
+            margin-bottom: 72px;
+        }
+   .nav-item:not(:last-child){
+        margin-right: 24px;
+    }
 .nav-button{
     padding: 12px 24px;
     font-style: normal;
@@ -347,10 +353,7 @@ font-style: normal;
         .nav-button:focus{
 color: #FFFFFF;
 }
-.nav-item{
-    margin-top: 96px;
-margin-bottom: 72px;
-}
+
         
 /* ==================== project-card ====================*/
 .project-card-flex{
