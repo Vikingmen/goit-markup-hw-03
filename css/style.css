@@ -318,6 +318,9 @@ padding: 100px 0;
 .portfolio-header{
     margin-bottom: 96px;
 }
+.portfolio{
+    margin-bottom: 120px;
+}
 .portfolio-title{
     display: none;
 }
@@ -356,6 +359,7 @@ color: #FFFFFF;
 
         
 /* ==================== project-card ====================*/
+
 .project-card-flex{
     display: flex;
     flex-wrap: wrap;
